@@ -15,7 +15,7 @@ export default function Home() {
 
         <div className="box mt-128 w-full max-w-xl p-8 rounded-lg flex flex-row bg-boxBackground outline-2 outline-boxOutlineColor">
           {/* image and buttons */}
-          <div className="flex flex-col items-center gap-4 mt-[8px]">
+          <div className="flex flex-col items-center gap-4 pr-4 mt-[8px]">
             <div className="relative w-16 h-16">
               <Image
                 src="/profile.jpg" 
@@ -38,6 +38,15 @@ export default function Home() {
                   Email
                 </p>
               </a>  
+            </div>
+            <div className="flex flex-col gap-1.5">
+              <h2 className="text-center text-white text-xs">
+                Languages
+              </h2>
+              <div className="flex flex-row gap-1 justify-center">
+                <span className="box flex rounded-full bg-black outline-1 outline-boxOutlineColor justify-center text-[6px] pt-0.5 pb-0.5 pl-2 pr-2">Arabic</span>
+                <span className="box flex  rounded-full bg-black outline-1 outline-boxOutlineColor justify-center text-[6px] pt-0.5 pb-0.5 pl-2 pr-2">English</span>
+              </div>
             </div>
           </div>
           <div className="flex-col text-center sm:text-left p-2">
