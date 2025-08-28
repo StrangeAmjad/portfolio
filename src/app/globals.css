@@ -5,6 +5,9 @@
   --background: #0a0a0a;
   --foreground: #ededed;
   --foregroundSecondary: #8f8f8f;
+  --boxBackground : #040916;
+  --boxOutlineColor: #252525;
+  --buttonBackground: #D9D9D9;
 }
 
 
@@ -13,6 +16,9 @@
   --color-foreground: var(--foreground);
   --color-foregroundSecondary: var(--foregroundSecondary);
   --font-comfortaa: var(--font-comfortaa);
+  --color-boxBackground: var(--boxBackground);
+  --color-boxOutlineColor: var(--boxOutlineColor);
+  --color-buttonBackground: var(--buttonBackground);
 }
 
 

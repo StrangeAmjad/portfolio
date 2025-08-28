@@ -1,3 +1,4 @@
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -8,10 +9,49 @@ export default function Home() {
             Hi, i am Amjad
           </p>
           <p className="text-2xl text-foregroundSecondary">
-                Software Engineer
+            Software Engineer
           </p>
+        </div>
+
+        <div className="box mt-128 w-full max-w-4xl p-8 rounded-lg flex flex-row bg-boxBackground outline-2 outline-boxOutlineColor">
+          {/* image and buttons */}
+          <div className="flex-row items-center justify-center">
+            <div className="relative w-16 h-16">
+              <Image
+                src="/profile.jpg" 
+                alt="Amjad Profile image"
+                fill
+                className="rounded-full object-cover"
+                priority
+              />
+            </div>  
+            <div className="flex-col items-center w-max max-w-32 min-w-19.5">
+              <a className="box flex rounded-full bg-buttonBackground/13 text-sm justify-center p-[5px] hover:bg-buttonBackground/50" target="_blank" href="https://github.com/StrangeAmjad">
+                <Image src="/github-mark-white.png" alt="GitHub Mark" width={64} height={64} className="w-3 h-3"/>
+                <p className="text-center ml-1 text-white text-[8px]">
+                  GitHub
+                </p>
+              </a>  
+              <a className="box flex rounded-full bg-buttonBackground/13 text-sm justify-center p-[5px] hover:bg-buttonBackground/50" target="_blank" href="https://github.com/StrangeAmjad">
+                <Image src="/email.svg" alt="Email Logo" width={64} height={64} className="w-3 h-3 invert"/>
+                <p className="text-center ml-1 text-white text-[8px]">
+                  Email
+                </p>
+              </a>  
+            </div>
           </div>
+          <div className="flex-col text-center sm:text-left p-2">
+            <h2 className="text-2xl text-foreground">
+              About
+            </h2>
+            <p className="text-base">
+              Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
+            </p>
+          </div>
+
+        </div>
       </main>
+
     </div>
   );
 }
