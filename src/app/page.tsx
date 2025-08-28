@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div className="font-comfortaa grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
+      <main className="flex flex-col gap-[32px] row-start-2 items-center">
         <div className="flex gap-4 items-center flex-col text-center ">
           <p className="text-8xl text-foreground">
             Hi, i am Amjad
@@ -13,9 +13,9 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="box mt-128 w-full max-w-4xl p-8 rounded-lg flex flex-row bg-boxBackground outline-2 outline-boxOutlineColor">
+        <div className="box mt-128 w-full max-w-xl p-8 rounded-lg flex flex-row bg-boxBackground outline-2 outline-boxOutlineColor">
           {/* image and buttons */}
-          <div className="flex-row items-center justify-center">
+          <div className="flex flex-col items-center gap-4 mt-[8px]">
             <div className="relative w-16 h-16">
               <Image
                 src="/profile.jpg" 
@@ -25,14 +25,14 @@ export default function Home() {
                 priority
               />
             </div>  
-            <div className="flex-col items-center w-max max-w-32 min-w-19.5">
+            <div className="flex flex-col w-max max-w-32 min-w-16 gap-1.5">
               <a className="box flex rounded-full bg-buttonBackground/13 text-sm justify-center p-[5px] hover:bg-buttonBackground/50" target="_blank" href="https://github.com/StrangeAmjad">
                 <Image src="/github-mark-white.png" alt="GitHub Mark" width={64} height={64} className="w-3 h-3"/>
                 <p className="text-center ml-1 text-white text-[8px]">
                   GitHub
                 </p>
               </a>  
-              <a className="box flex rounded-full bg-buttonBackground/13 text-sm justify-center p-[5px] hover:bg-buttonBackground/50" target="_blank" href="https://github.com/StrangeAmjad">
+              <a className="box flex rounded-full bg-buttonBackground/13 text-sm justify-center p-[5px] hover:bg-buttonBackground/50" target="_blank" href="mailto:amjad.formal@gmail.com">
                 <Image src="/email.svg" alt="Email Logo" width={64} height={64} className="w-3 h-3 invert"/>
                 <p className="text-center ml-1 text-white text-[8px]">
                   Email
